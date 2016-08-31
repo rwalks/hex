@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProStrat</title>
+    <link rel="stylesheet" type="text/css" href="css/hex.css" />
+    <!-- Client -->
+    <script src="js/client/GameClient.js" type="text/javascript"></script>
+    <script src="js/client/Controls.js" type="text/javascript"></script>
+    <script src="js/client/Gui.js" type="text/javascript"></script>
+    <script src="js/client/Cursor.js" type="text/javascript"></script>
+    <script src="js/client/Camera.js" type="text/javascript"></script>
+    <!-- Engine -->
+    <script src="js/engine/GameEngine.js" type="text/javascript"></script>
+    <script src="js/engine/GameState.js" type="text/javascript"></script>
+    <script src="js/engine/MapMaker.js" type="text/javascript"></script>
+    <script src="js/engine/GameConfig.js" type="text/javascript"></script>
+    <!-- Graphics -->
+    <script src="js/graphics/GraphicsEngine.js" type="text/javascript"></script>
+    <script src="js/graphics/CanvasManager.js" type="text/javascript"></script>
+    <script src="js/graphics/MapGraphics.js" type="text/javascript"></script>
+    <script src="js/graphics/MenuGraphics.js" type="text/javascript"></script>
+    <!-- Art -->
+    <script src="js/graphics/art/Art.js" type="text/javascript"></script>
+    <script src="js/graphics/art/ArtUtils.js" type="text/javascript"></script>
+    <script src="js/graphics/art/TileArt.js" type="text/javascript"></script>
+    <script src="js/graphics/art/UnitArt.js" type="text/javascript"></script>
+    <script src="js/graphics/art/CursorArt.js" type="text/javascript"></script>
+    <!-- Utils -->
+    <script src="js/utils/Config.js" type="text/javascript"></script>
+    <script src="js/utils/Utils.js" type="text/javascript"></script>
+    <script src="js/utils/Elements.js" type="text/javascript"></script>
+    <!-- Models -->
+    <script src="js/models/Unit.js" type="text/javascript"></script>
+    <script src="js/models/Map.js" type="text/javascript"></script>
+    <script src="js/models/Player.js" type="text/javascript"></script>
+    <script src="js/models/Culture.js" type="text/javascript"></script>
+    <script src="js/models/Hero.js" type="text/javascript"></script>
+    <!-- Scenes -->
+    <script src="js/scenes/Scene.js" type="text/javascript"></script>
+    <script src="js/scenes/GameScene.js" type="text/javascript"></script>
+    <script src="js/scenes/IntroScene.js" type="text/javascript"></script>
+    <script src="js/scenes/MenuScene.js" type="text/javascript"></script>
+    <script src="js/scenes/ConfigScene.js" type="text/javascript"></script>
+    <script src="js/scenes/GameSetupScene.js" type="text/javascript"></script>
+    <script src="js/scenes/HotseatScene.js" type="text/javascript"></script>
+    <script src="js/scenes/PickTeamScene.js" type="text/javascript"></script>
+    <script src="js/scenes/PickCultureScene.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <canvas id="mainCanvas"></canvas>
+    <script>
+      document.oncontextmenu = function() {return false;};
+      var config = new Config();
+      var colors = new Colors();
+      var client = new GameClient();
+      client.run();
+    </script>
+  </body>
+</html>

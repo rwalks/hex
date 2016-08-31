@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#mainCanvas {
+  padding: 0;
+  margin: 0;
+}
+
+.game_title {
+  font-size: 15em;
+  position: fixed;
+  color: black;
+  -webkit-user-select: none;
+  cursor: default;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.game_header {
+  font-size: 4em;
+  position: fixed;
+  color: black;
+  -webkit-user-select: none;
+  cursor: default;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(250,0,250);
+}
+
+.game_msg {
+  font-size: 2em;
+  position: fixed;
+  color: white;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.text_button {
+  text-align: center;
+  font-size: 1em;
+  background: rgba(250,0,250,0.3);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  -webkit-transition: background 1s, color 1s;
+}
+
+.text_button:hover {
+  color: rgb(200,255,200);
+  background: rgba(250,0,250,0.6);
+}
+
+.select_holder {
+  position: fixed;
+  -webkit-user-select: none;
+  cursor: default;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.left_button {
+  display: inline-block;
+  background: rgba(250,0,250,0.3);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  border-radius: 20px 0 0 20px;
+  width: 5%;
+  -webkit-user-select: none;
+  -webkit-transition: background 1s, color 1s;
+}
+
+.left_button:hover {
+  color: rgb(200,255,200);
+  background: rgba(250,0,250,0.6);
+}
+
+.right_button {
+  display: inline-block;
+  background: rgba(250,0,250,0.3);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  border-radius: 0 20px 20px 0;
+  width: 5%;
+  -webkit-user-select: none;
+  -webkit-transition: background 1s, color 1s;
+}
+
+.right_button:hover {
+  color: rgb(200,255,200);
+  background: rgba(250,0,250,0.6);
+}
+
+.center_button {
+  display: inline-block;
+  background: rgba(250,0,250,0.3);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  width: 19%;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  -webkit-user-select: none;
+}
+
+
